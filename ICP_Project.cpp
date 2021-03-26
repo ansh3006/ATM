@@ -9,7 +9,7 @@ int person;
 int due[10]={0,0,0,0,0,0,0,0,0,0};
 long long mob_num[10]={9713716557,7357974302,9425794225,9977107105,7089973646,7015935333,8295243455,7894561230,110022334447,9876543210};
 long long balance[10]={50000,100500,5000,55000,1000,789,1522,252,19822,17000};
-string name[20]={"Ankit Sharma","Anshul Ghanghoria","Ankur Goud","Anshul Singh Tomar","Ansh Saxena","Rohan Shukla","Maruf Qureshi","Aman Dubey","Aditya Nema","Gaurav Tiwari"};
+string name[10]={"Ankit Sharma","Anshul Ghanghoria","Ankur Goud","Anshul Singh Tomar","Ansh Saxena","Rohan Shukla","Maruf Qureshi","Aman Dubey","Aditya Nema","Gaurav Tiwari"};
 int pin[10]={2103,1835,7892,1937,4468,5586,6456,9982,8511,7081};
 
 int intro();
