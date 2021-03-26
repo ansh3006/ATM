@@ -20,6 +20,7 @@ void deposit_amount(int a);
 void transfer_amount(int a);
 void account_details(int a);
 void change_pin(int a);
+void credits();
 
 int main(){
 
@@ -31,7 +32,7 @@ int main(){
         system("cls");
         goto A;
     }else if(process==7){
-        goto E;
+        goto Q;
     }else{
         int wrong=0;
         B: int count = 0;
@@ -85,16 +86,19 @@ int main(){
             goto A;
         }else if(choice == 'N'){
             system("cls");
+            goto E;
         }else{
             system("cls");
             cout<<"Please Choose From The Given Choices."<<endl;
             end();
         }
     }
-    
-
     E:cout<<"--------------------Thank You!!-----------------"<<endl<<endl;
+    system("pause");
+    system("cls");
+    goto A;
 
+Q:credits();
 return 0;
 }
 
@@ -228,6 +232,7 @@ void change_pin(int a){
             pin[a] = p1;
             cout<<"PIN Changed Successfully!!"<<endl<<endl;
             system("pause");
+            system("cls");
             cout<<endl;
             end();
         }else{
@@ -254,4 +259,12 @@ void change_pin(int a){
 void end(){
     cout<<"Do You Wanna Do More Transactions...(Y for Yes & N for No): ";
     cin>>choice;
+}
+
+void credits(){
+    cout<<"--------------------Thank You!!--------------------"<<endl<<endl;
+    cout<<"--------------------ATM Project--------------------"<<endl<<endl;
+    cout<<"Presented By ---"<<endl;
+    cout<<"1. Ankit Sharma (0901CS201021)"<<endl<<"2. Ankur Goud (0901CS201022)"<<endl<<"3. Ansh Saxena (0901CS201023)"<<endl<<"4. Anshul Ghanghoria (0901CS201024)"<<endl<<"5. Anshul Singh Tomar (0901CS201025)"<<endl<<endl;
+    system("pause");
 }
